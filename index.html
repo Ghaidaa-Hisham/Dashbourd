@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dashboard </title>
+    <link rel="stylesheet" href="./dash.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+
+        <div class="logo"> 
+            <h2 class="logo">C <span class="barar">BARAR</span></h2>
+       </div><br>
+        <ul>
+            <li onclick="scrollToSection('home')" > <span class="material-symbols-outlined">Home</span></li>
+            <li onclick="scrollToSection('about')"><span class="material-symbols-outlined">person</span></li>
+            <li onclick="scrollToSection('product')"><span class="material-symbols-outlined"> public</span></li>
+            <li onclick="scrollToSection('contact')"><span class="material-symbols-outlined">mail</span></li>
+            <li onclick="scrollToSection('settings')"> <span class="material-symbols-outlined">settings</span></li>
+        </ul>
+        <ul> 
+            <li onclick="scrollToSection('logout')" class="logout"><span class="material-symbols-outlined"> logout </span>Logout</li>
+        </ul>
+    </div>
+    <!--Main Content -->
+    <div class="content">
+        <div class="main-content">
+                <div class="dashboard-header">
+                    <h2>Dashboard</h2>
+                    <div class="date-picker">
+                        <input type="date">
+                    </div>
+                </div>  
+
+                 <!-- Dashboard Cards -->
+                <div class="dashboard-cards">
+                    <div class="card">
+                        <h3>Total Sales</h3>
+                        <p>$2,524</p>
+                        <span>Last 24 Hours</span>
+                    </div>
+                    <div class="card">
+                        <h3>Total Sales</h3>
+                        <p>$5,624</p>
+                        <span>Last 02 Day</span>
+                    </div>
+                      <div class="card">
+                        <h3>Total Sales</h3>
+                        <p>$10,024</p>
+                        <span>Last one Week</span>
+                    </div>
+                    <div class="card">
+                        <h3>Total Sales</h3>
+                        <p>$20,555</p>
+                        <span>Last two weeks</span>
+                    </div>
+                    <div class="card">
+                        <h3>Total Sales</h3>
+                        <p>$25,500</p>
+                        <span>Last Month</span>
+                    </div>
+                    <div class="card">
+                        <h3>Total Sales</h3>
+                        <p>$45,750</p>
+                        <span>Last Two Month</span>
+                    </div>
+                 </div>
+              <!-- recent order  -->
+                <h2 class="order">Recent Orders</h2>
+                <div class="table">
+                     <div class="table-header">
+                       <h3>Product</h3>
+                       <h3>Product Number</h3>
+                       <h3>Payment</h3>
+                       <h3>Status</h3>
+                     </div>
+                     <div class="table-row">
+                     <ul>
+                        <li>mini USB</li>
+                        <li>mini USB</li>
+                        <li>mini USB</li>
+                        <li>mini USB</li>
+                        <li>mini USB</li>
+                     </ul>
+                     <ul>
+                        <li>4236</li>
+                        <li>42368</li>
+                        <li>4239</li>
+                        <li>4256</li>
+                        <li>4214</li>
+                     </ul>
+                     <ul>
+                        <li>Due</li>
+                        <li>Due</li>
+                        <li>Due</li>
+                        <li>Due</li>
+                        <li>Due</li>
+                     </ul>
+                     <ul>
+                        <li class="status pending">Pending</li>
+                        <li class="status pending">Pending</li>
+                        <li class="status pending">Pending</li>
+                        <li class="status pending">Pending</li>
+                        <li class="status pending">Pending</li>
+                     </ul>
+                </div>
+           </div>
+                   <!-- About Section -->
+           <div>
+                <section id="about">
+                  <h2>About Us</h2>
+                  <p>This section provides a brief overview of the company or brand. It includes some general information about the services and mission of the organization.</p>
+                </section>
+
+                  <!-- Contact Section -->
+                <section id="contact">
+                  <h2>Contact Us</h2>
+                  <p>Email: example@company.com</p>
+                  <p>Phone: +123-456-7890</p>
+                </section>
+
+                  <!-- Settings Section -->
+                <section id="settings">
+                   <h2>Settings</h2>
+                   <p>This is the settings section where users can configure their preferences.</p>
+                </section>
+           </div> 
+       </div>
+    </div>
+    <!-- Right Panel -->
+    <div class="right">
+        <!-- Recent Updates -->
+        <div class="top">
+            <button id="menu"> 
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+
+            <div class="theme">
+                <span class="material-symbols-outlined">light_mode</span>
+                <span class="material-symbols-outlined">dark_mode</span>
+            </div>
+
+        </div>
+        <div class="recent-updates">
+            <h3>Recent Update</h3>
+            <div class="updates">
+
+                <ul class="update">
+                    <li>
+                        <img src="./photo_2024-09-11_23-42-08.jpg" alt="User">
+                        <p>Babar received his order of USB</p>
+                    </li>
+                </ul>
+                <ul class="update">
+                    <li>
+                        <img src="./photo_2024-09-11_23-42-08.jpg" alt="User">
+                        <p>Babar received his order of USB</p>
+                    </li>
+                </ul>
+                <ul class="update">
+                    <li>
+                        <img src="./photo_2024-09-11_23-42-08.jpg" alt="User">
+                        <p>Babar received his order of USB</p>
+                    </li>
+                </ul>
+            </div>  
+        </div>
+
+        <!-- Sales Analytics -->
+        <div class="sales-analytics">
+            <h3>Sales Analytics</h3>
+            <div>
+                <div><span class="material-symbols-outlined">shopping_cart</span>
+                    <p>Online Orders</p>
+                    <h5>-17%</h5>
+                    <p>3849</p>
+                </div>
+            </div>
+            <div>
+                <div><span class="material-symbols-outlined">shopping_cart</span>
+                    <p>Online Orders</p>
+                    <h5>-17%</h5>
+                    <p>3849</p>
+                </div>
+            </div>
+            <div>
+                <div><span class="material-symbols-outlined">shopping_cart</span>
+                    <p>Online Orders</p>
+                    <h5>-17%</h5>
+                    <p>3849</p>
+                </div>
+            </div>
+        </div>
+  </div>
+</div>
+<script src="./dash.js"></script>
+</body>
+</html>
